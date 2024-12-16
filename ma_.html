@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/img/fju-icon.png" rel="icon">
+    <title>公告管理介面</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* sidebar */
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #011F26;
+            position: fixed;
+            top: 0;
+            left: 0;
+            color: white;
+            padding-top: 20px;
+        }
+
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            background-color: #025E73;
+        }
+
+        .dropdown-menu {
+            display: none;
+            background-color: #025E73;
+            padding: 0;
+            margin: 0;
+        }
+
+        .dropdown-menu a {
+            padding: 10px 15px;
+            color: #ddd;
+            display: block;
+            text-decoration: none;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #026873;
+        }
+
+        /* header */
+        .header {
+            padding: 20px;
+            background-color: #026873;
+            border-bottom: 1px solid #025E73;
+            border-radius: 20px;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            color: aliceblue;
+        }
+
+        /* content */
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        .card {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 側邊欄 -->
+    <div class="sidebar">
+        <div class="logo d-flex align-items-center me-auto">
+            <img src="assets/img/fju-icon.png" style="margin: 20px;width: 35px; height: 35px;" alt="">
+            <h2 class="text-center">管理系統</h2>
+        </div>
+        <div class="dropdown1">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown1()">公告管理</a>
+            <div class="dropdown-menu">
+                <a href="ma_management.html">管理公告</a>
+                <a href="ma_add.html">新增公告</a>
+            </div>
+        </div>
+        <div class="dropdown2">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown2()">用戶管理</a>
+            <div class="dropdown-menu">
+                <a href="ma_manageuser.html">使用者管理</a>
+                <a href="ma_manager.html">管理者管理</a>
+                <a href="ma_user.html">新增用戶</a>
+            </div>
+        </div>
+        <a href="#">設定</a>
+        <a href="index.html">首頁</a>
+        <a class="nav-link" href="logout.php">登出</a>
+    </div>
+
+    <!-- 主要內容 -->
+    <div class="content">
+        <div class="header d-flex justify-content-between align-items-center">
+            <h1>管理系統</h1>
+        </div>
+        <!--  -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="card p-3">
+                    <style>
+                        .control .btn{
+                            background-color: #f2668b;
+                            color: white;
+                        }
+                    </style>
+                    <div class="control">
+                        <div><h1>歡迎管理者!</h1></div>
+                        <div class="row mb-3">
+                            <div class="col-sm-6 mb-3 mb-sm-0">
+                              <div class="card">
+                                <div class="card-body">
+                                  <h3 class="card-title">公告管理|管理公告</h3>
+                                  <a href="ma_management.html" class="btn">管理公告</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="card">
+                                <div class="card-body">
+                                  <h3 class="card-title">公告管理|新增公告</h3>
+                                  <a href="ma_add.html" class="btn">新增公告</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="row mb-3">
+                            <div class="col-sm-4 mb-3 mb-sm-0">
+                              <div class="card">
+                                <div class="card-body">
+                                  <h3 class="card-title">用戶管理|使用者管理</h3>
+                                  <a href="ma_manageuser.html" class="btn">使用者管理</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <div class="card">
+                                <div class="card-body">
+                                  <h3 class="card-title">用戶管理|管理者管理</h3>
+                                  <a href="ma_manager.html" class="btn">管理者管理</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card">
+                                  <div class="card-body">
+                                    <h3 class="card-title">用戶管理|新增用戶</h3>
+                                    <a href="ma_user.html" class="btn">新增用戶</a>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!--  -->
+    <script>
+        function toggleDropdown1() {
+            const dropdownMenu = document.querySelector('.dropdown1 .dropdown-menu');
+            dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+    <script>
+        function toggleDropdown2() {
+            const dropdownMenu = document.querySelector('.dropdown2 .dropdown-menu');
+            dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+
+</html>

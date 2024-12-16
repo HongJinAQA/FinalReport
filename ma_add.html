@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/img/fju-icon.png" rel="icon">
+    <title>公告管理介面</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* sidebar */
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #011F26;
+            position: fixed;
+            top: 0;
+            left: 0;
+            color: white;
+            padding-top: 20px;
+        }
+
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            background-color: #025E73;
+        }
+
+        .dropdown-menu {
+            display: none;
+            background-color: #025E73;
+            padding: 0;
+            margin: 0;
+        }
+
+        .dropdown-menu a {
+            padding: 10px 15px;
+            color: #ddd;
+            display: block;
+            text-decoration: none;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #026873;
+        }
+
+        /* header */
+        .header {
+            padding: 20px;
+            background-color: #026873;
+            border-bottom: 1px solid #025E73;
+            border-radius: 20px;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            color: aliceblue;
+        }
+
+        /* content */
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        .card {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 側邊欄 -->
+    <div class="sidebar">
+        <div class="logo d-flex align-items-center me-auto">
+            <img src="assets/img/fju-icon.png" style="margin: 20px;width: 35px; height: 35px;" alt="">
+            <h2 class="text-center">管理系統</h2>
+        </div>
+        <div class="dropdown1">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown1()">公告管理</a>
+            <div class="dropdown-menu">
+                <a href="ma_management.html">管理公告</a>
+                <a href="ma_add.html">新增公告</a>
+            </div>
+        </div>
+        <div class="dropdown2">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown2()">用戶管理</a>
+            <div class="dropdown-menu">
+                <a href="ma_manageuser.html">使用者管理</a>
+                <a href="ma_manager.html">管理者管理</a>
+                <a href="ma_user.html">新增用戶</a>
+            </div>
+        </div>
+        <a href="#">設定</a>
+        <a href="index.html">首頁</a>
+        <a href="">登出</a>
+    </div>
+
+    <!-- 主要內容 -->
+    <div class="content">
+        <div class="header d-flex justify-content-between align-items-center">
+            <h1>公告管理|新增公告</h1>
+        </div>
+
+        <!-- 新增表單 -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="card p-3">
+
+                    <style>
+                        .addnews {
+                            background-color: #03A688;
+                            border-radius: 20px;
+                            padding: 15px;
+                        }
+                    </style>
+                    <div class="addnews">
+                        <form>
+                            <!-- row 1 -->
+                            <div class="row">
+                                <div class="col">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="upload_name">實習資訊</span>
+                                        <input type="text" class="form-control" placeholder="實習資訊" aria-label="實習資訊">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="input-group mb-3">
+                                        <select class="form-select" id="">
+                                            <option selected>類別</option>
+                                            <option value="1">金融業</option>
+                                            <option value="2">資訊業</option>
+                                            <option value="3">科技業</option>
+                                            <option value="4">其他</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div><!-- / -->
+
+                            <!-- row 2  -->
+                            <div class="row">
+                                <div class="col">
+                                    <div class="input-group mb-3">
+                                        <select class="form-select" id="">
+                                            <option selected>工作內容</option>
+                                            <option value="1">軟體工程師</option>
+                                            <option value="2">前端工程師</option>
+                                            <option value="3">後端工程師</option>
+                                            <option value="4">財務會計助理</option>
+                                            <option value="5">專案工程師</option>
+                                            <option value="6">IC設計工程師</option>
+                                            <option value="7">行銷企劃專員</option>
+                                            <option value="8">其他</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="input-group mb-3">
+                                        <select class="form-select" id="">
+                                            <option selected>標籤</option>
+                                            <option value="1">500大企業</option>
+                                            <option value="2">外商</option>
+                                            <option value="3">金融業</option>
+                                            <option value="4">資訊業</option>
+                                            <option value="5">科技業</option>
+                                            <option value="6">其他</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div><!-- / -->
+
+                            <!-- row 3 -->
+                            <div class="row">
+                                <div class="col">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">實習資訊</span>
+                                        <textarea class="form-control" aria-label="With textarea" rows="10"></textarea>
+                                    </div><!-- / -->
+                                </div>
+                            </div>
+
+                            <!-- row 4 -->
+                            <div class="row">
+                                <div class="col">
+                                    <div class="input-group mb-3">
+                                        <input type="file" class="form-control" id="upload_file">
+                                        <label class="input-group-text" for="input_file">上傳檔案</label>
+                                    </div><!-- / -->
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+
+                    <div class="button_add">
+                        <style>
+                            .button_add {
+                                width: 20%;
+                                margin: auto;
+                            }
+
+                            .button_add input {
+                                margin: 20px auto;
+                                display: flex;
+                                justify-content: center;
+                                background-color:  #F2668B;
+                                border-radius: 10px;
+                                border: hidden;
+                                color: aliceblue;
+                            }
+                        </style>
+                        <div class="row">
+                            <div class="col">
+                                <input type="submit" class="btn" value="確認上傳">
+                            </div>
+                            <div class="col">
+                                <input type="button" class="btn" value="儲存草稿">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!--  -->
+    <script>
+        function toggleDropdown1() {
+            const dropdownMenu = document.querySelector('.dropdown1 .dropdown-menu');
+            dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+    <script>
+        function toggleDropdown2() {
+            const dropdownMenu = document.querySelector('.dropdown2 .dropdown-menu');
+            dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+
+</html>
