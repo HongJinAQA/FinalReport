@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>輔仁大學產業實習平台</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/fju-icon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: eNno
+  * Template URL: https://bootstrapmade.com/enno-free-simple-bootstrap-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <!-- Title -->
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/fju-icon.png" style="margin-right: 20px;" alt="">
+        <h1 class="sitename">輔仁大學產業實習平台</h1>
+      </a>
+      <!-- nav -->
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">首頁</a></li>
+          <li class="dropdown"><a href=""><span>實習快訊
+              </span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="new_news.html">實習活動</a></li>
+              <li><a href="new_likenews.html">收藏</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href=""><span>實習</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="exp_experience.html">實習心得</a></li>
+              <li><a href="exp_autobiography.html">我的自傳</a></li>
+              <li><a href="exp_upload.html">上傳自傳</a></li>
+            </ul>
+          </li>
+          <li><a href="">企業資訊</a></li>
+        </ul>
+        <!-- 縮小側邊攔 -->
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav><!-- /nav -->
+      <!-- login -->
+      <div class="nav-signbtn">
+        <style>
+          .nav-signbtn a{
+            background-color: #e2808a;
+            color: white;
+            font-weight: 200;
+            font-size: 16px;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin: 0px 0px 0px 15px;
+            padding: 10px;
+            border-radius: 50px;
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+          }
+          .signbtn a:hover{
+            background: #e7666c;
+            color: white;
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+          }
+        </style>
+        <a class="btn" href="sign.php" role="button">登入/註冊</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- hero -->
+    <section id="hero" class="hero section">
+      <div class="container">
+        <div class="row gy-3">
+          <!-- 1 -->
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="fade-up">
+            <h1>輔仁大學產業實習平台</h1>
+            <p>歡迎來到輔仁大學產業實習平台，來尋找合適的實習機會吧!</p>
+
+            <div class="signbtn">
+              <style>
+                .signbtn a{
+                  background-color: #e2808a;
+                  color: white;
+                  font-weight: 400;
+                  font-size: 16px;
+                  letter-spacing: 1px;
+                  display: inline-block;
+                  padding: 10px 28px 10px 28px;
+                  border-radius: 50px;
+                  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+                }
+                .signbtn a:hover{
+                  background: #e7666c;
+                  color: white;
+                  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+                }
+              </style>
+              <a class="btn" href="sign.php" role="button">登入/註冊</a>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="100">
+            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- /hero -->
+
+    <!-- 快速導覽 -->
+    <section id="featured-services" class="featured-services section">
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
+              <h4><a href="new_news.html" class="stretched-link">尋找實習機會</a></h4>
+              <p>Come find rich and suitable internship activities and seize the opportunity quickly.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-activity icon"></i></div>
+              <h4><a href="exp_experience.html" class="stretched-link">實習心得</a></h4>
+              <p>Let’s take a look at other people’s internship experiences. They must have had a miserable time.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
+              <h4><a href="" class="stretched-link">企業資訊</a></h4>
+              <p>Let’s take a look at the company information to see which company has the evil boss</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 最新消息 -->
+    <section id="about" class="about section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span>最新消息<br></span>
+        <h2>最新消息</h2>
+      </div>
+      <div class="container">
+        <div class="row gy-4">
+          <!-- 1 -->
+          <div class="list-group">
+            <a href="new_news.html" class="list-group-item list-group-item-action list-group-item-success">更多消息</a>
+            <br>
+            <!--  -->
+            <a href="new_demo.html" class="list-group-item list-group-item-action " aria-current="true">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">富盛會計師事務所</h5>
+                <small>2024/01/10</small>
+              </div>
+            </a>
+            <!--  -->
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">達欣工程股份有限公司</h5>
+                <small class="text-body-secondary">2024/02/05</small>
+              </div>
+            </a>
+            <!--  -->
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 c lass="mb-1">台積電</h5>
+                <small class="text-body-secondary">2024/03/15</small>
+              </div>
+            </a>
+            <!--  -->
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">台塑石化</h5>
+                <small class="text-body-secondary">2024/04/01</small>
+              </div>
+            </a>
+            <!--  -->
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">台積電</h5>
+                <small class="text-body-secondary">2024/03/15</small>
+              </div>
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- /最新消息 -->
+
+    <!-- 實習心得 -->
+    <section id="testimonials" class="testimonials section light-background">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span>實習心得</span>
+        <h2>實習心得</h2>
+      </div><!-- End Section Title -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper" data-speed="600" data-delay="5000"
+          data-breakpoints="{ &quot;320&quot;: { &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 40 }, &quot;1200&quot;: { &quot;slidesPerView&quot;: 3, &quot;spaceBetween&quot;: 40 } }">
+          <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  },
+                  "breakpoints": {
+                    "320": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 40
+                    },
+                    "1200": {
+                      "slidesPerView": 3,
+                      "spaceBetween": 20
+                    }
+                  }
+                }
+            </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class=" bi bi-quote quote-icon-left"></i>
+                  <span>在科技創新有限公司的前端開發實習期間，我參與了多個實際項目的開發，深入了解了React框架的應用。與資深工程師合作的過程中，我學會了如何高效地進行代碼管理和版本控制，並掌握了使用Git進行協作的方法。此外，通過參與用戶界面設計，我提升了自己的UI/UX設計能力，學會了如何根據用戶反饋進行產品迭代。這段實習經歷不僅增強了我的技術能力，也讓我對未來的職業發展有了更清晰的規劃。</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>張偉倫</h3>
+                <h4>科技創新有限公司</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span> 在數據驅動股份有限公司實習期間，我主要負責數據收集與分析工作。通過使用Python和SQL，我能夠有效地處理大量數據，並運用Excel和Tableau製作詳細的報告和視覺化圖表。公司提供了豐富的培訓資源，使我能夠快速掌握數據分析的核心技能。此外，我參與了多個跨部門的項目，學會了如何在團隊中協作，並提升了解決問題的能力。這次實習讓我對數據分析的應用有了更深的理解，並激發了我進一步學習的興趣。</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>李思涵</h3>
+                <h4>數據驅動股份有限公司</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>在創意行銷有限公司的實習期間，我參與了多個市場推廣活動的策劃與執行。通過協助制定市場策略、撰寫行銷文案以及管理社交媒體平台，我提升了自己的行銷策劃能力和創意思維。此外，我有機會與客戶直接溝通，了解他們的需求，並根據反饋調整行銷方案。公司提供的指導和反饋使我在短時間內迅速成長，並對市場行銷的各個環節有了全面的認識。這段實習經歷讓我更加堅定了未來從事行銷工作的決心。</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>王曉婷</h3>
+                <h4>創意行銷有限公司</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>在優質軟體開發有限公司實習期間，我主要負責軟體測試與質量保證工作。通過學習和使用各種測試工具，如Selenium和JIRA，我能夠有效地設計測試案例，進行自動化測試，並記錄和跟蹤缺陷。此外，我參與了敏捷開發團隊的日常會議，了解了軟體開發的整個流程，並學會了如何在快速迭代中保持測試的高效性和準確性。這次實習不僅提升了我的技術技能，還讓我深刻體會到團隊合作和溝通的重要性。</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>陳建宇</h3>
+                <h4>優質軟體開發有限公司</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section><!-- /實習心得 -->
+
+    <!-- 企業資訊 -->
+    <section id="services" class="services section light-background">
+
+      <!-- Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span>企業資訊</span>
+        <h2>企業資訊</h2>
+      </div><!-- End Section Title -->
+      <div class="container">
+        <div class="row gy-4">
+          <!-- 1 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-activity"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>雲端智聯科技股份有限公司</h3>
+              </a>
+              <p>雲端智聯專注於企業雲端解決方案的開發，提供一系列從資料儲存到自動化流程管理的工具，致力於幫助企業提升工作效率與數據管理能力。該公司以創新技術和彈性服務聞名，並為多家大型企業提供高效的雲端整合服務。</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>未來創意行銷有限公司</h3>
+              </a>
+              <p>未來創意行銷是一家專注於數位行銷的公司，提供從社交媒體營運、SEO優化到品牌策劃的全方位行銷解決方案。公司注重創新與數據驅動，以協助企業有效觸達目標客群，提升品牌影響力和市場佔有率。</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-easel"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>智研數據分析股份有限公司</h3>
+              </a>
+              <p>智研數據分析公司專注於大數據分析與人工智慧應用，為各行業的企業提供精準的數據驅動解決方案，包含預測分析、客戶洞察與智能報告。公司強調創新和深度數據應用，幫助企業快速解讀市場趨勢，並做出數據支持的決策。</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-bounding-box-circles"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>匯智設計工作室</h3>
+              </a>
+              <p>匯智設計工作室是一家專業的設計公司，擅長品牌設計、視覺識別和網站設計。該公司以創意和精緻的設計風格聞名，曾為多個知名品牌打造獨具風格的品牌形象。公司成員由經驗豐富的設計師組成，專注於為客戶提供高品質的視覺設計方案。</p>
+              <a href="service-details.html" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-calendar4-week"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>卓越科技軟體開發有限公司</h3>
+              </a>
+              <p>卓越科技是一家軟體開發公司，提供客製化的軟體開發服務，從系統分析、前端與後端開發到品質測試一應俱全。該公司專注於解決企業的技術難題，開發高效穩定的軟體解決方案，以滿足不同領域企業的需求。</p>
+              <a href="service-details.html" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-chat-square-text"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>綠能環保創新有限公司</h3>
+              </a>
+              <p>綠能環保創新致力於開發可持續的綠能科技，提供從能源管理系統到綠色建築解決方案的綜合服務。公司以環保和創新為核心理念，透過技術推動企業和社會的可持續發展，並提升能源使用效率以減少碳足跡。</p>
+              <a href="service-details.html" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+      </div>
+    </section><!-- /企業資訊 -->
+
+    <!-- Contact -->
+    <section id="contact" class="contact section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span>關於我們</span>
+        <h3>關於我們</h3>
+      </div><!-- End Section Title -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-2">
+
+          <div class="col-lg-6">
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>地址</h3>
+                  <p>242新北市新莊區中正路510號</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>電話</h3>
+                  <p>02 29052000</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>網站</h3>
+                  <p><a href="http://www.fju.edu.tw" target="_blank">http://www.fju.edu.tw</a></p>
+                </div>
+              </div><!-- End Info Item -->
+
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.933618314964!2d121.43007997483214!3d25.036326738198863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7dd8be91eaf%3A0xe342a67d6574f896!2z5aSp5Li75pWZ6LyU5LuB5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1729007857261!5m2!1szh-TW!2stw"
+              frameborder="0" style="border:0; width: 100%; height: 325px;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Contact -->
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Chin</strong> <span>All Rights Reserved</span></p>
+    </div>
+    </div>
+
+  </footer><!-- /Footer -->
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
